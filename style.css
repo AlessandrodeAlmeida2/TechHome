@@ -1,0 +1,100 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url('img/land_3.jpg');
+    background-size: cover;
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa */
+}
+
+main {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-image: url('img/backgroun-2.png'); /* Define a imagem background-2 como fundo do <main> */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20%;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; /* Remove o ponto da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+nav li {
+    margin-left: 25%;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+nav li a:hover {
+    transform: scale(1.5); /* Aumenta o tamanho do link em 1.5 vezes */
+}
+
+.main_home {
+    margin-left: -18px;
+    padding-left: 6%;
+    padding-bottom: 5%;
+    background-color: #fff;
+    border-radius: 0 40px 40px 0;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(19, 69, 97, 0.1); /* Adiciona uma sombra */
+}
+
+.logo {
+    width: 40%;
+}
+
+.img_principal {
+    background-color: #092a4d;
+    width: 52%;
+    padding: 4%;
+    border-radius: 30px 0 30px 0;
+    margin-bottom: 5%;
+}
+
+.sala_tv {
+    width: 90%;
+    border-radius: 0 55px 55px 0;
+    margin: 4% 0% 4% -8%;
+}
+
+/* Regras de mídia para responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 20%;
+    }
+}
