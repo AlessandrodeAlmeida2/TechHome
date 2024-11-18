@@ -10,17 +10,36 @@
     <title>TechHome</title>
 </head>
 <body class="">
+    <header>
+        <!--hamburger-icon-->
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--end hamburger-icon-->
+      <nav id="inicio">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="solucoes">Soluções</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
         <div id="inicio" class="contato">
             <form action="">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required>
+                <label class="input" for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
                 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <label class="input" for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="digite seu email" required>
                 
-                <label for="phone">Telefone:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <label class="input" for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+
+                <label class="input" for="textarea">Texto</label>
+                <input type="text" id="textarea" name="text" placeholder="Escreva sua mensgem...">
                 
                 <button type="submit">Enviar</button>
             </form>

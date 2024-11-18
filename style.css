@@ -481,6 +481,39 @@ nav li a:hover {
     }
 }
 
+.contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    max-width: 40%;
+    padding: 1% 10%;
+    border-radius: 40px;
+}
+
+button {
+    width: 100%;
+    max-width: 20%;
+    padding: 1% 10%;
+    border-radius: 40px;
+    margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-bottom: 15%;
+    }
+    input {
+        max-width: 80%;
+    }
+
+    button {
+        max-width: 30%;
+    }
+}
+
 /*Footer*/
 footer {
     background-color: #092033;
