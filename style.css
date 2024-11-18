@@ -1,7 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .background {
@@ -357,7 +363,7 @@ nav li a:hover {
     background-color: #fff;
     width: 35%;
     height: 20vw;
-    margin: 20% 0% 0% -19%;
+    margin: 17% 0% 0% -15%;
     padding: 0% 0 2% 5%;
     box-shadow: 0 4px 8px rgba(19, 69, 97, 0.1);
 }
