@@ -30,5 +30,12 @@ $(document).ready(function () {
       popupOverlay.fadeOut();
       popup.fadeOut();
     });
+});
+
+$(document).ready(function () {
+  // Função para rolagem suave ao clicar no link
+  $("#topo").on("click", function (event) {
+      event.preventDefault(); // Previne o comportamento padrão do link
+      $("html, body").animate({ scrollTop: 0 }, "slow"); // Rola suavemente para o topo
   });
-  
+});
