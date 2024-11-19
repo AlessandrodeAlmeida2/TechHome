@@ -90,7 +90,7 @@ nav li a:hover {
 .txt_main h1 {
     color: #1d496c;
     font-size: 2.8vw;
-    margin: -18% 6% 5% 31%;
+    margin: -20% 6% 5% 25%;
 }
 
 .txt_main span {
@@ -198,7 +198,8 @@ nav li a:hover {
 
     .txt_main h1 {
         font-size: 4vw;
-        margin-left: 21%;
+        padding-top: 3%;
+        margin-left: 22%;
         margin-right: 10%;
     }
 
