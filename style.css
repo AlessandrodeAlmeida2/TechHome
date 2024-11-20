@@ -302,6 +302,38 @@ nav li a:hover {
     }
 }
 
+/*video*/
+.demo-visual {
+    max-width: 100%;
+}
+
+.demo-visual h2 {
+    font-size: 2.8vw;
+    color: #092033;
+}
+
+.video-container iframe {
+    width: 50%; 
+    height: 50vh; 
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .demo-visual {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .demo-visual h2 {
+        font-size: 5.5vw;
+        padding-top: 5%;
+    }
+
+    .video-container iframe {
+        width: 100%;
+    }
+}
+
 .container-2 {
     display: flex;
     flex-direction: column;
@@ -358,23 +390,23 @@ nav li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 400px;
+    max-width: 100%;
     background-color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    padding: 20px;
+    padding: 5%;
     z-index: 1000;
   }
   
   .popup p {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.6vw;
   }
   
   .popup-close {
     display: block;
     margin: 10px 0 0 auto;
-    width: 50px;
+    width: 3vw;
     text-align: center;
     cursor: pointer;
     color: red;
@@ -399,12 +431,67 @@ nav li a:hover {
     }
 }
 
+/*por up*/
+.promo-timer {
+    width: 30%;
+    max-width: 100%;
+}
+
+.promo-content {
+    margin: 3%;
+    padding: 2%;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    border: solid #092033 1px;
+    color: #fff;
+    position: fixed;
+    z-index: 30;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Inicialmente escondido */
+}
+
+.close-btn {
+    font-size: 1.6vw;
+}
+
+@media (max-width: 768px) {
+    .promo-content {
+        width: 80%;
+    }
+}
+
 .container-3 {
     width: 100%;
     background-color: #fff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     max-width: 100%;
+}
+
+.txt-container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3%;
+}
+
+.txt-container3 h1 {
+    font-size: 2.8vw;
+    color: #092033;
+}
+
+.txt-container3 ul li {
+    font-size: 1.6vw;
+    color: #092033;
+    line-height: 2vw;
+}
+
+.img-card2 {
+    display: flex;
+    flex-direction: row;
 }
 
 .card-2 {
@@ -443,7 +530,7 @@ nav li a:hover {
 }
 
 .txt_card-2 {
-    width: 55%;
+    width: 100%;
     margin-left: 10%;
 }
 
@@ -463,7 +550,21 @@ nav li a:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 83%;
+        margin-top: 218%;
+    }
+
+    .txt-container3 h1 {
+        font-size: 5.5vw;
+    }
+
+    .txt-container3 ul li {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .img-card2 {
+        display: flex;
+        flex-direction: column;
     }
 
     .card-2 {
@@ -519,6 +620,128 @@ button {
 
     button {
         max-width: 30%;
+    }
+}
+
+/*section prova social*/
+.prova-social {
+    padding: 5%;
+}
+.prova-social h2 {
+    font-size: 2vw;
+    color: #092033;
+}
+
+.testimonials1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+}
+
+.testimonials2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.testimonial {
+    margin: 3%;
+    padding: 2%;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    border: solid #092033 1px;
+    color: #fff;
+}
+
+.testimonial p {
+    font-size: 1.4vw;
+}
+
+.testimonial span {
+    font-size: 1.4vw;
+}
+
+.testimonial h4 {
+    font-size: 1.6vw;
+}
+
+@media (max-width: 768px) {
+    .prova-social h2 {
+        font-size: 5.5vw;
+    }
+    
+    .testimonials1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    
+    .testimonials2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .testimonial {
+        width: 70%;
+    }
+    
+    .testimonial p {
+        font-size: 3vw;
+    }
+    
+    .testimonial span {
+        font-size: 3vw;
+    }
+    
+    .testimonial h4 {
+        font-size: 3.3vw;
+    }
+}
+
+/*section parceiras*/
+.parcerias {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.parcerias h2 {
+    font-size: 2.8vw;
+    color: #092033;
+}
+
+.parcerias p {
+    font-size: 1.6vw;
+    color: #092033;
+}
+
+.parcerias a {
+    background-color: #2fbcda;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.6vw;
+    padding: 2% 10%;
+    border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+    .parcerias h2 {
+        font-size: 5.5vw;
+    }
+    
+    .parcerias p {
+        font-size: 3vw;
+    }
+    
+    .parcerias a {
+        background-color: #2fbcda;
+        color: #fff;
+        text-decoration: none;
+        font-size: 3vw;
     }
 }
 
