@@ -345,6 +345,13 @@ nav li a:hover {
     max-width: 100%;
 }
 
+.container-2 h2 {
+    font-size: 2.8vw;
+    color: #092033;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
 .itens-1 {
     display: flex;
     flex-direction: row;
@@ -392,7 +399,6 @@ nav li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
     max-width: 100%;
     background-color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -403,7 +409,7 @@ nav li a:hover {
   
   .popup p {
     margin: 0;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
   }
   
   .popup-close {
@@ -431,6 +437,10 @@ nav li a:hover {
 @media (max-width: 768px) {
     .container-2 {
         display: none;
+    }
+
+    .container-2 h2 {
+        font-size: 5.5vw;
     }
 }
 
@@ -477,19 +487,13 @@ nav li a:hover {
 .txt-container3 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 3%;
+    align-items: center;
 }
 
 .txt-container3 h1 {
     font-size: 2.8vw;
     color: #092033;
-}
-
-.txt-container3 ul li {
-    font-size: 1.6vw;
-    color: #092033;
-    line-height: 2vw;
+    padding: 3%;
 }
 
 .img-card2 {
@@ -502,15 +506,15 @@ nav li a:hover {
     flex-direction: row;
     align-items: center;
     background-color: #fff;
-    width: 39%;
-    height: 21vw;
-    margin: 17% 0% 0% -15%;
-    padding: 1% 1% 2% 2%;
+    width: 45%;
+    height: 23vw;
+    margin: 11% 0% 0% -13%;
+    padding: 0% 0% 2% 0%;
     box-shadow: 0 4px 8px rgba(19, 69, 97, 0.1);
 }
 
 .card-2 .icon-2 {
-    margin: -10% -5%;
+    margin: -7% -4%;
 }
 
 .card-2 h2 {
@@ -521,6 +525,7 @@ nav li a:hover {
 .card-2 p {
     color: #1d496c;
     font-size: 1.6vw;
+    line-height: 1vw;
 }
 
 .card-2 a {
@@ -533,19 +538,16 @@ nav li a:hover {
 }
 
 .txt_card-2 {
-    width: 100%;
-    margin-left: 10%;
+    margin-left: 8%;
 }
 
 .img_principal {
-    width: 64%;
-    padding: 0 0% 0 7%;
-    margin: 5% 0;
+    width: 62%;
+    margin-bottom: 7%;
 }
 
 .sala_tv {
     width: 90%;
-    margin: 4% 0% 4% -8%;
 }
 
 @media (max-width: 768px) {
@@ -558,11 +560,7 @@ nav li a:hover {
 
     .txt-container3 h1 {
         font-size: 5.5vw;
-    }
-
-    .txt-container3 ul li {
-        font-size: 3vw;
-        line-height: 4vw;
+        margin-top: 10%;
     }
 
     .img-card2 {
@@ -572,6 +570,7 @@ nav li a:hover {
 
     .card-2 {
         width: 100%;
+        height: 100%;
         margin: 10% 0%;
         box-shadow: none;
     }
@@ -795,7 +794,7 @@ button {
 
 @media (max-width: 768px) {
     .solutions {
-        margin-top: 50%;
+        margin-top: 0;
     }
 
    .solutions h2 {
@@ -822,6 +821,90 @@ button {
         font-size: 4vw;
         line-height: 5vw;
         margin-top: -95%;
+    }
+}
+
+/* FAQ Section */
+.faq {
+    padding: 5%;
+    background-color: #c8e6ff9c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    text-align: start;
+    color: #092033;
+    margin-bottom: 20px;
+    font-size: 2.8vw;
+}
+
+.faq1  {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: space-between; /* Distribui os itens uniformemente */
+    margin-bottom: 20px;
+}
+
+.faq2 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 20px; /* Espaçamento uniforme entre os itens */
+    justify-content: space-between; /* Distribui os itens uniformemente */
+    margin-bottom: 20px;
+    margin-left: -10%;
+}
+
+.faq-item {
+    flex: 1 1 calc(50% - 20px); /* Ocupa 50% do contêiner menos o espaço do gap */
+    box-sizing: border-box; /* Inclui padding e borda dentro da largura */
+    width: 100%;
+    min-width: 300px; /* Garante uma largura mínima para evitar itens muito estreitos */
+    padding: 2% 10%;
+    margin: 2% 0;
+}
+
+.faq-question {
+    display: flex;
+    width: 100%; /* Botão ocupa toda a largura do item */
+    background-color: #092033;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.4vw;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #055288;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    color: #092033;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Show answer when active */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 5.5vw;
+    }
+
+    .faq-question {
+        font-size: 3vw;
     }
 }
 
