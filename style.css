@@ -496,14 +496,18 @@ nav li a:hover {
     color: #fff;
     position: fixed;
     z-index: 30;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none; /* Inicialmente escondido */
 }
 
 .close-btn {
+    background-color: #fff;
+    width: 8%;
+    padding: 1%;
     font-size: 1.6vw;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -934,8 +938,24 @@ button {
     background-color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    padding: 5%;
+    padding: 0 3%;
     z-index: 1000;
+}
+
+.close-faq {
+    background-color: #2CABFF;
+    width: 8%;
+    padding: 1%;
+    top: 5%;
+    left: 97%;
+    font-size: 1.6vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-answer p {
+    font-size: 1.6vw;
+    padding-bottom: 5%;
 }
 
 /* Show answer when active */
@@ -958,6 +978,10 @@ button {
     }
 
     .faq-question {
+        font-size: 3vw;
+    }
+
+    .faq-answer p {
         font-size: 3vw;
     }
 }
